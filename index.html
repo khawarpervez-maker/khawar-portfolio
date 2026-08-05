@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khawar Attari — Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -15,23 +15,15 @@
   <!-- Navigation Bar -->
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">
-        <span class="brand-icon"><i class="fa-solid fa-code"></i></span>
-        <span class="brand-primary">Khawar</span> Attari
-      </div>
+      <div class="brand-logo">KA</div>
       <nav class="menu">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="active">ABOUT ME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#milestones">MILESTONES</a>
+        <a href="#contact">CONTACT</a>
       </nav>
-      <div class="social-links">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
+      <a href="#" class="btn btn-green nav-cv"><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a>
     </div>
   </header>
 
@@ -40,203 +32,40 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <h1 class="name">Khawar<br><span class="accent">Attari</span></h1>
-          <p class="role"><span class="highlight">Karachi based</span> Full Stack Developer</p>
-          <a class="btn primary-pill" href="#contact">Get Connected</a>
+          <div class="line-accent"></div>
+          <h1 class="name">
+            Hi, I am<br>
+            <span class="accent">Khawar,</span><br>
+            Full-Stack<br>
+            Developer<span class="cursor">|</span>
+          </h1>
+
+          <p class="lead-text">
+            Welcome to my portfolio! <strong>Khawar Attari</strong> is a <strong>Full Stack Developer</strong> with a passion for creating <strong>visually stunning</strong> and <strong>intuitive</strong> web experiences. With a <strong>unique</strong> blend of technical skills and creative flair, I am <strong>confident</strong> in my ability to deliver <strong>custom solutions</strong> that meet the needs of my clients.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-green"><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a>
+            <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+          </div>
         </div>
 
         <div class="hero-right">
-          <div class="profile-circle">
-            <img src="assets/profile.jpg" alt="Khawar Attari" class="profile-img">
+          <div class="image-wrapper">
+            <div class="shatter-bg"></div>
+            <img src="assets/profile.jpg" alt="Khawar Attari" class="hero-profile-img">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Top Feature Cards -->
-    <section class="features">
-      <div class="container feature-grid">
-        <div class="feature-card">
-          <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
-          <h3>Deeper Skillset</h3>
-          <p>Clean PHP & Laravel code, scalable database designs, and dynamic enterprise web architectures.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
-          <h3>Creative Work</h3>
-          <p>Modern interactive dashboards, responsive user interfaces, and modular backend API integration.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Strong Dedication</h3>
-          <p>Building high-speed POS & ERP business software focused on system stability and reliable support.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About / Skills / Content Sections -->
+    <section id="about" class="section-block">
       <div class="container">
-        <div class="section-header center">
-          <span class="sub-title">About Me</span>
-          <h2>A Passionate Developer<br>Who Loves to Code</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-left">
-            <div class="image-stack">
-              <img src="assets/profile.jpg" alt="Khawar Attari" class="main-img">
-              <div class="exp-badge">
-                <span class="exp-num">3+</span>
-                <span class="exp-text">Years Of<br>Experience</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-right">
-            <h3>My Bio</h3>
-            <p>I am Khawar Attari, a Full Stack Developer based in Karachi, Pakistan. I specialize in building custom business applications, ERP web scripts, and administrative systems using Core PHP, Laravel, MySQL, JavaScript, Tailwind CSS, and Bootstrap.</p>
-            
-            <div class="info-grid">
-              <div class="info-item">
-                <span class="label">Name</span>
-                <span class="value">Khawar Attari</span>
-              </div>
-              <div class="info-item">
-                <span class="label">Address</span>
-                <span class="value">Karachi, Pakistan</span>
-              </div>
-              <div class="info-item">
-                <span class="label">Email</span>
-                <span class="value">khawarpervez@gmail.com</span>
-              </div>
-              <div class="info-item">
-                <span class="label">Phone</span>
-                <span class="value">03233219986</span>
-              </div>
-            </div>
-
-            <a class="btn primary-pill" href="#">Download CV</a>
-          </div>
-        </div>
-
-        <!-- Counter Banner -->
-        <div class="stats-banner">
-          <div class="stat-box">
-            <h2>3+</h2>
-            <p>Years Experience</p>
-          </div>
-          <div class="stat-box">
-            <h2>50+</h2>
-            <p>Projects Completed</p>
-          </div>
-          <div class="stat-box">
-            <h2>100%</h2>
-            <p>Client Satisfaction</p>
-          </div>
-          <div class="stat-box">
-            <h2>24/7</h2>
-            <p>Support Available</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header center">
-          <span class="sub-title">Skills</span>
-          <h2>I Work Hard to Improve My<br>Skills Regularly</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-bar">
-            <div class="skill-info">
-              <span>PHP / Laravel</span>
-              <span>90%</span>
-            </div>
-            <div class="progress-line"><span style="width: 90%;"></span></div>
-          </div>
-
-          <div class="skill-bar">
-            <div class="skill-info">
-              <span>MySQL / Database Architecture</span>
-              <span>85%</span>
-            </div>
-            <div class="progress-line"><span style="width: 85%;"></span></div>
-          </div>
-
-          <div class="skill-bar">
-            <div class="skill-info">
-              <span>JavaScript / jQuery</span>
-              <span>80%</span>
-            </div>
-            <div class="progress-line"><span style="width: 80%;"></span></div>
-          </div>
-
-          <div class="skill-bar">
-            <div class="skill-info">
-              <span>Tailwind CSS / Bootstrap 5</span>
-              <span>95%</span>
-            </div>
-            <div class="progress-line"><span style="width: 95%;"></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Portfolio -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header center">
-          <span class="sub-title">Portfolio</span>
-          <h2>Check Out My Latest Projects</h2>
-        </div>
-        <div class="project-grid">
-          <div class="project-card">
-            <div class="project-content">
-              <h3>POS & ERP Manufacturing Solution</h3>
-              <p>Laravel, MySQL, Tailwind CSS</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Custom Inventory Platform</h3>
-              <p>Core PHP, MySQL, Bootstrap 5</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Desktop Runtime ERP Application</h3>
-              <p>Laravel, NativePHP, SQLite</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Dynamic Dynamic CMS Engine</h3>
-              <p>Laravel, REST API, JavaScript</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header center">
-          <span class="sub-title">Contact</span>
-          <h2>Let's Talk About Your Project</h2>
-        </div>
-        <form class="contact-form" action="#" onsubmit="return false;">
-          <div class="form-group-row">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your email" required>
-          </div>
-          <textarea placeholder="Message" rows="5" required></textarea>
-          <button class="btn primary-pill">Send Message</button>
-        </form>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">
+          I am a professional Full Stack Developer based in Karachi, Pakistan. I specialize in Core PHP, Laravel, MySQL, JavaScript, Tailwind CSS, Bootstrap, and desktop application tools.
+        </p>
       </div>
     </section>
   </main>
