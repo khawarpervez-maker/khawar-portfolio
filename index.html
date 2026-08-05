@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khawar Attari — Portfolio</title>
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -53,7 +53,29 @@
         <div class="hero-right">
           <div class="image-wrapper">
             <div class="shatter-bg"></div>
-            <img src="assets/profile.jpg" alt="Khawar Attari" class="hero-profile-img">
+            <!-- Dynamic Vector Graphic Profile Display -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="hero-profile-img" style="width: 300px; height: 300px; border-radius: 50%;">
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e262c" />
+                  <stop offset="100%" stop-color="#0f1418" />
+                </linearGradient>
+                <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#72c061" />
+                  <stop offset="100%" stop-color="#54a044" />
+                </linearGradient>
+              </defs>
+              <!-- Card Background -->
+              <circle cx="250" cy="250" r="240" fill="url(#avatarGrad)" stroke="url(#accentGrad)" stroke-width="8" />
+              <!-- User Graphic Silhouette -->
+              <g transform="translate(0, 20)">
+                <circle cx="250" cy="180" r="80" fill="#72c061" opacity="0.9" />
+                <path d="M 110 380 C 110 280, 390 280, 390 380 Z" fill="#72c061" opacity="0.9" />
+                <!-- Code Overlay Badge -->
+                <rect x="160" y="380" width="180" height="45" rx="10" fill="#14191d" stroke="#72c061" stroke-width="2" />
+                <text x="250" y="410" font-family="Inter, sans-serif" font-weight="800" font-size="18" fill="#ffffff" text-anchor="middle">&lt;KA /&gt;</text>
+              </g>
+            </svg>
           </div>
         </div>
       </div>
