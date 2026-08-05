@@ -7,117 +7,246 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Section/Card Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="dark-theme">
+
+  <!-- Navigation -->
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand"><span class="brand-primary">Khawar</span> Attari</div>
+      <div class="brand">
+        <span class="brand-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="brand-primary">Khawar</span> Attari
+      </div>
       <nav class="menu">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Portfolio</a>
         <a href="#contact">Contact</a>
-        <button id="themeToggle" class="icon-btn">☾</button>
       </nav>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <p class="greeting">Hello, I'm</p>
-          <h1 class="name">Khawar <span class="accent">Attari</span></h1>
-          <p class="role">Full Stack <span class="accent">Developer</span></p>
-          <p class="lead">I build modern, fast and secure web applications with clean code and powerful backend.</p>
-
-          <div class="badges">
-            <span>PHP</span>
-            <span>Laravel</span>
-            <span>MySQL</span>
-            <span>JavaScript</span>
-            <span>Tailwind</span>
-            <span>Bootstrap</span>
-          </div>
-
-          <div class="cta">
-            <a class="btn primary" href="#contact">Hire Me</a>
-            <a class="btn outline" href="#">Download CV</a>
-          </div>
+          <h1 class="name">Khawar<br><span class="accent">Attari</span></h1>
+          <p class="role"><span class="highlight">Karachi based</span> Full Stack Developer</p>
+          <a class="btn primary-pill" href="#contact">Get Connected</a>
         </div>
 
         <div class="hero-right">
-          <div class="profile-wrap">
-            <!-- Put your profile photo at assets/profile.png to show here -->
-            <img src="assets/profile.jpg" alt="Profile" class="profile">
+          <div class="profile-circle">
+            <img src="assets/profile.jpg" alt="Khawar Attari" class="profile-img">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Top Features / Value Cards -->
+    <section class="features">
+      <div class="container feature-grid">
+        <div class="feature-card">
+          <div class="icon-box"><i class="fa-solid fa-gear"></i></div>
+          <h3>Deeper Skillset</h3>
+          <p>Clean code, modular dynamic architecture, and custom database solutions built for enterprise systems.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Creative Work</h3>
+          <p>Designing modern, responsive interfaces and seamless backend interactions using Laravel and Tailwind.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box"><i class="fa-solid fa-gem"></i></div>
+          <h3>Strong Dedication</h3>
+          <p>Delivering high-performance software with zero downtime and reliable 24/7 client support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header center">
+          <span class="sub-title">About Me</span>
+          <h2>A Passionate Developer<br>Who Loves to Code</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <div class="image-stack">
+              <img src="assets/profile.jpg" alt="Khawar Attari Working" class="main-img">
+              <div class="exp-badge">
+                <span class="exp-num">3+</span>
+                <span class="exp-text">Years Of<br>Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <h3>My Bio</h3>
+            <p>I am Khawar Attari, a Full Stack Developer based in Pakistan. I specialize in building dynamic web applications, custom ERP modules, and desktop integrations using Core PHP, Laravel, MySQL, JavaScript, and modern front-end frameworks like Tailwind CSS and Bootstrap.</p>
+            
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Name</span>
+                <span class="value">Khawar Attari</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Address</span>
+                <span class="value">Karachi, Pakistan</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Email</span>
+                <span class="value">khawarpervez@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Phone</span>
+                <span class="value">03233219986</span>
+              </div>
+            </div>
+
+            <a class="btn primary-pill" href="#">Download CV</a>
+          </div>
+        </div>
+
+        <!-- Counter Banner -->
+        <div class="stats-banner">
+          <div class="stat-box">
+            <h2>3+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-box">
+            <h2>50+</h2>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-box">
+            <h2>100%</h2>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Support Available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills">
       <div class="container">
-        <div class="skills-row">
-          <div class="skill-card">
-            <h3>Web Development</h3>
-            <p>Building responsive and modern websites with clean code.</p>
-          </div>
-          <div class="skill-card">
-            <h3>Backend Development</h3>
-            <p>Developing secure and scalable backend with PHP & Laravel.</p>
-          </div>
-          <div class="skill-card">
-            <h3>UI/UX Design</h3>
-            <p>Creating beautiful and user friendly interfaces.</p>
-          </div>
+        <div class="section-header center">
+          <span class="sub-title">Skills</span>
+          <h2>I Work Hard to Improve My<br>Skills Regularly</h2>
         </div>
 
-        <div class="about-me">
-          <h2>About <span class="accent">Me</span></h2>
-          <p>I am Khawar Attari, a passionate Full Stack Developer from Pakistan. I specialize in building dynamic web applications using PHP, Laravel, JavaScript, MySQL and modern front-end technologies.</p>
-          <p>I love turning ideas into real world solutions. My goal is to build products that are fast, secure and scalable.</p>
+        <div class="skills-grid">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>PHP / Laravel</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-line"><span style="width: 90%;"></span></div>
+          </div>
 
-          <div class="stats">
-            <div><strong>3+</strong><span>Years Experience</span></div>
-            <div><strong>50+</strong><span>Projects Completed</span></div>
-            <div><strong>100%</strong><span>Client Satisfaction</span></div>
-            <div><strong>24/7</strong><span>Support</span></div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>MySQL / Database Architecture</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-line"><span style="width: 85%;"></span></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>JavaScript / jQuery</span>
+              <span>80%</span>
+            </div>
+            <div class="progress-line"><span style="width: 80%;"></span></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Tailwind CSS / Bootstrap 5</span>
+              <span>95%</span>
+            </div>
+            <div class="progress-line"><span style="width: 95%;"></span></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="container">
-        <h2>Projects</h2>
-        <p class="muted">A selection of recent work. Replace these placeholders with your real projects.</p>
+        <div class="section-header center">
+          <span class="sub-title">Portfolio</span>
+          <h2>Check Out My Latest Projects</h2>
+        </div>
         <div class="project-grid">
-          <div class="project">Project 1</div>
-          <div class="project">Project 2</div>
-          <div class="project">Project 3</div>
-          <div class="project">Project 4</div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>POS & ERP Software Solution</h3>
+              <p>Laravel, MySQL, Tailwind CSS</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Custom E-Commerce Platform</h3>
+              <p>Core PHP, MySQL, Bootstrap 5</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Desktop Runtime ERP App</h3>
+              <p>Laravel, NativePHP, SQLite</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Dynamic Content Management System</h3>
+              <p>Laravel, JavaScript, REST API</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <p class="muted">Interested in working together? Send a message.</p>
+        <div class="section-header center">
+          <span class="sub-title">Contact</span>
+          <h2>Let's Talk About Your Project</h2>
+        </div>
         <form class="contact-form" action="#" onsubmit="return false;">
-          <input type="text" placeholder="Your name" required>
-          <input type="email" placeholder="Your email" required>
+          <div class="form-group-row">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+          </div>
           <textarea placeholder="Message" rows="5" required></textarea>
-          <button class="btn primary">Send Message</button>
+          <button class="btn primary-pill">Send Message</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Khawar Attari — Built with care.</div>
+    <div class="container">
+      <p>© 2026 Khawar Attari — Built with care.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
