@@ -4,99 +4,136 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khawar Attari — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navigation Bar -->
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand-logo">KA</div>
+      <div class="brand"><span class="brand-primary">Khawar</span> Attari</div>
       <nav class="menu">
-        <a href="#about" class="active">ABOUT ME</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#milestones">MILESTONES</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a href="#" class="btn btn-green nav-cv"><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a>
+      <button id="themeToggle" class="icon-btn">☾</button>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container hero-grid">
+        <aside class="social-panel">
+          <a href="#" class="social-link">G</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">W</a>
+          <a href="#" class="social-link">✉</a>
+        </aside>
+
         <div class="hero-left">
-          <div class="line-accent"></div>
-          <h1 class="name">
-            Hi, I am<br>
-            <span class="accent">Khawar,</span><br>
-            Full-Stack<br>
-            Developer<span class="cursor">|</span>
-          </h1>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Khawar <span class="accent">Attari</span></h1>
+          <p class="hero-subtitle">Full Stack <span class="accent">Developer</span></p>
+          <p class="hero-copy">I build modern, fast and secure web applications with clean code and powerful backend.</p>
 
-          <p class="lead-text">
-            Welcome to my portfolio! <strong>Khawar Attari</strong> is a <strong>Full Stack Developer</strong> with a passion for creating <strong>visually stunning</strong> and <strong>intuitive</strong> web experiences. With a <strong>unique</strong> blend of technical skills and creative flair, I am <strong>confident</strong> in my ability to deliver <strong>custom solutions</strong> that meet the needs of my clients.
-          </p>
+          <div class="tech-badges">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Tailwind</span>
+          </div>
 
-          <div class="cta-buttons">
-            <a href="#" class="btn btn-green"><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</a>
-            <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn outline" href="#">Download CV</a>
           </div>
         </div>
 
         <div class="hero-right">
-          <div class="image-wrapper">
-            <div class="shatter-bg"></div>
-            <!-- Dynamic Vector Graphic Profile Display -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="hero-profile-img" style="width: 300px; height: 300px; border-radius: 50%;">
-              <defs>
-                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#1e262c" />
-                  <stop offset="100%" stop-color="#0f1418" />
-                </linearGradient>
-                <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#72c061" />
-                  <stop offset="100%" stop-color="#54a044" />
-                </linearGradient>
-              </defs>
-              <!-- Card Background -->
-              <circle cx="250" cy="250" r="240" fill="url(#avatarGrad)" stroke="url(#accentGrad)" stroke-width="8" />
-              <!-- User Graphic Silhouette -->
-              <g transform="translate(0, 20)">
-                <circle cx="250" cy="180" r="80" fill="#72c061" opacity="0.9" />
-                <path d="M 110 380 C 110 280, 390 280, 390 380 Z" fill="#72c061" opacity="0.9" />
-                <!-- Code Overlay Badge -->
-                <rect x="160" y="380" width="180" height="45" rx="10" fill="#14191d" stroke="#72c061" stroke-width="2" />
-                <text x="250" y="410" font-family="Inter, sans-serif" font-weight="800" font-size="18" fill="#ffffff" text-anchor="middle">&lt;KA /&gt;</text>
-              </g>
-            </svg>
+          <div class="hero-card">
+            <div class="hero-glow"></div>
+            <img src="assets/profile.jpg" alt="Khawar Attari" class="profile">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About / Skills / Content Sections -->
-    <section id="about" class="section-block">
+    <section id="skills" class="skills-section">
+      <div class="container skills-grid">
+        <div class="skill-column">
+          <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Building responsive and modern websites with clean, maintainable code.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend Development</h3>
+            <p>Developing secure and scalable backend architectures using PHP & Laravel.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Creating beautiful, intuitive and user-friendly interfaces.</p>
+          </div>
+        </div>
+
+        <div class="about-panel" id="about">
+          <h2>About <span class="accent">Me</span></h2>
+          <p>I am Khawar Attari, a passionate Full Stack Developer from Pakistan. I specialize in building dynamic web applications using PHP, Laravel, JavaScript, MySQL, and modern front-end technologies.</p>
+          <p>I love turning ideas into real world solutions. My goal is to build products that are fast, secure and scalable.</p>
+
+          <div class="stats-row">
+            <div class="stat-card"><strong>3+</strong><span>Years Experience</span></div>
+            <div class="stat-card"><strong>50+</strong><span>Projects Completed</span></div>
+            <div class="stat-card"><strong>100%</strong><span>Client Satisfaction</span></div>
+            <div class="stat-card"><strong>24/7</strong><span>Support</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-desc">
-          I am a professional Full Stack Developer based in Karachi, Pakistan. I specialize in Core PHP, Laravel, MySQL, JavaScript, Tailwind CSS, Bootstrap, and desktop application tools.
-        </p>
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Explore some of the real world projects and solutions I have delivered.</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">Portfolio Website</div>
+          <div class="project-card">E-commerce App</div>
+          <div class="project-card">Admin Dashboard</div>
+          <div class="project-card">Booking System</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Interested in working together? Send a message and I will get back to you soon.</p>
+        </div>
+        <form class="contact-form" action="#" onsubmit="return false;">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button class="btn primary">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Khawar Attari — Built with care.</p>
-    </div>
+    <div class="container">© 2026 Khawar Attari — Built with care.</div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
